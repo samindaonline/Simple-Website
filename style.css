@@ -1,0 +1,545 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: icons;
+    src: url(fonts/WebSymbols-Regular.otf);
+}
+
+
+body{
+    font-family: Poppins;
+    background-color:#ffffff;
+}
+
+#divPage{
+    width: 804px;
+    height: 800px;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+#divHeader{
+    height: 150px;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 1px;
+    border-style:solid;
+    border-color: #2562d1;
+    background-color: rgb(226, 118, 17);
+}
+
+#divLinks{
+    width: 150px;
+    height: 800px;
+    background-color: #2562d1;
+    float: left;
+}
+#divContent{
+    background-color: rgb(255, 255, 255);
+    height: 797px;
+    width: 650px;
+    float: left;
+    border-top: 1px;
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-style:solid;
+    border-color: #2562d1;
+    overflow: hidden;
+}
+
+#shopNow{
+    background-color: #ffffff;
+    padding: 10px 25px;
+    margin: 75px 0 0 575px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    color: #0140b2;
+    border-radius: 10px;
+}
+#shopNow:hover{
+    font-weight: bolder;
+    margin: 75px 0 0 574px;
+    background-color: #0140b2;
+    color: white;
+}
+
+li{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+}
+
+a.menu{
+    display: block;
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    color: white;
+    margin-left: -40px;
+}
+
+a.menu:hover{
+    display: block;
+    background-color: aliceblue;
+    color: #0140b2;
+    padding: 10px 10px 10px 25px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#divMenu{
+    width: 150px;
+    position: sticky;
+  top: 0;
+}
+
+#iframeContent{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Home Page*/
+
+#bodyHome{
+    display: contents;
+}
+
+#divHome{
+    height: 796px;
+    width: 650px;
+    background-color: white;
+}
+
+.divShoeContainer{
+    float: left;
+    height: 125px;
+    width: 150px;
+    margin:4px 0 4px 7px;
+    text-align: center;
+    /*border: 1px solid black;*/
+}
+
+.divShoeImage{
+    width: 150px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divShoeName{
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+}
+
+p.shoeName{
+    margin:0px;
+    font-size: 13px;
+    line-height: 14px;
+    max-width: 25ch;
+    padding: 2px;
+}
+
+span.shoePrice{
+    font-weight: bold;
+}
+
+img.imgShoe{
+    display: block;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#divShoeItems {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+#divHAboutSection{
+    overflow: hidden;
+    width: 600px;
+    height: 235px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#divHAboutImg{
+    overflow: hidden;
+    float: left;
+}
+
+#imgHAbout{
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+#divHAboutDescription{
+    overflow: hidden;
+    float: left;
+    width: 250px;
+    height: 235px;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+#pHAboutSection {
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+#aHAbout{
+    text-decoration: none;
+}
+
+#aHAbout:hover{
+    font-weight: bolder;
+}
+
+#h4HAbout{
+    color:#00c6ed;
+}
+
+/*About Page*/
+#bodyAbout{
+    display: contents;
+}
+
+#divAbout{
+    height: 796px;
+    width: 650px;
+}
+
+#divAboutHeader{
+    width: inherit;
+    height: 200px;
+    position: relative;
+}
+
+#h2AboutHeader{
+    position: absolute;
+    top: 35px;
+    right: 110px;
+    font-size: 40px;
+    color:#0140b2;
+}
+
+#divAboutDescription{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+p.aboutDescription{
+    font-size: 14px;
+    text-align: justify;
+}
+
+h4.aboutDescription{
+    text-align: center;
+    color: #00c6ed;
+}
+
+/*Shop Page*/
+
+#bodyShop{
+    display: contents;
+}
+
+#divShop{
+    height: 796px;
+    width: 650px;
+}
+
+#divMenSection{
+    height: 398px;
+    width: auto;
+}
+
+#divMensHeader{
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+}
+
+#divShopShowcase{
+    width: auto;
+    height: 270px;
+    margin-top: 13px;
+    padding-left: 3px;
+}
+
+#divLadiesSection{
+    height: 399px;
+    width: auto;
+}
+
+h2.sectionHeader{
+    text-align: center;
+    color: #0140b2;
+    padding-top: 10px;
+}
+
+p.sectionHeader{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 14px;
+    color: #00c6ed;
+}
+/*Contact us Page*/
+#bodyContact{
+    display: contents;
+    
+}
+
+#divContact{
+    height: 797px;
+    width: 650px;
+    overflow: hidden;
+    z-index: -3;
+    position: relative;
+    background-color: #ffe45c;
+}
+
+#divContactHeader{
+    width: inherit;
+    height: 200px;
+    background-color: #0140b2;
+	overflow:hidden;
+}
+
+#divContactForm{
+    height: auto;
+    width: 420px;
+    border: 2px solid #0140b2;
+    background-color: #b4f0ff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-top: -100px;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+#tableForm{
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.frmContact{
+    padding: 10px;
+    margin: 3px 0 3px 0;
+    border-radius: 10px;
+    border: 1px #0140b2 solid;
+    font-size: 12px;
+    font-family: Poppins;
+}
+
+input[type=email].frmContact{
+    width: 215px;
+}
+
+.frmContact:focus{
+    padding: 10px;
+    margin: 3px 0 3px 0;
+    outline-width: 1px;
+    background-color: #ffffff !important;
+    outline-color: #0140b2;
+}
+
+textarea.frmContact{
+    resize: vertical;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #00633f ;
+    font-size: 16px;
+	font-weight:bold;
+    color: white;
+	background-color:#04AA6D;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.button:hover{
+	padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #0140b2 ;
+    font-size: 16px;
+	color:white;
+	font-weight:bold;
+	background-color:#0140b2;
+    margin-bottom: 10px;
+}
+
+.required{
+	color:red;
+}
+
+#h1ContactHeader{
+	text-align:center;
+	margin-top:35px;
+	color:white;
+}
+
+.msgError{
+    font-size: 12px;
+    color:red;
+}
+
+#divContactDetails{
+    width: inherit;
+    height: 174px;
+    z-index: -1;
+    position: relative;
+    background-color: #0140b2;
+    margin-top: -85px;
+}
+
+#txtName{
+    width: 180px;
+    background: url(Images/icons/user.png) no-repeat left;
+    background-size: 16px;
+    background-position-x: 8px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+#txtTp{
+    width: 120px;
+    background: url(Images/icons/phone-call.png) no-repeat left;
+    background-size: 16px;
+    background-position-x: 8px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+#txtEmail{
+    width: 180px;
+    background: url(Images/icons/at.png) no-repeat left;
+    background-size: 16px;
+    background-position-x: 8px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+#txtAddress{
+    width: 200px;
+    background: url(Images/icons/map-marker.png) no-repeat left;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 8px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+#txtMessage{
+    width: 280px;
+    background: url(Images/icons/envelope.png) no-repeat left;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 9px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.tick{
+    font-family: icons;
+    color: #10ce4f;
+    margin-left: 5px;
+}
+
+.lable{
+    width: 30px;
+}
+
+.input{
+    width: 200px;
+}
+
+.hoverLabel{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: +10;
+    transition: width 2s;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#divCall{
+    margin-top: 450px;
+    margin-left: 50px;
+    background-color: #04AA6D;
+}
+
+#divCall:hover{
+    height: 50px;
+    width: 210px;
+}
+
+#divAddress{
+    margin-top: 510px;
+    margin-left: 50px;
+    background-color: #FF5733;
+}
+
+#divAddress:hover{
+    height: 50px;
+    width: 390px;
+}
+
+#divEmail{
+    margin-top: 570px;
+    margin-left: 50px;
+    background-color: #DC143C;
+}
+
+#divEmail:hover{
+    height: 50px;
+    width: 335px;
+}
+
+.hoverIcon{
+    margin-left: 7px;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.hoverText{
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 7px;
+    white-space: nowrap;
+}
+
+

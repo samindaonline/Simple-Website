@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="Js.js"></script>
+    </head>
+    <body id="bodyContact">
+        <div id="divContact">
+            <div id="divContactHeader">
+				<h1 id="h1ContactHeader">Contact Form</h1>
+            </div>
+            <div id="divContactForm">
+                <form name="frmContact" onreset="emptyErrors();" autocomplete="off">
+                    <table id="tableForm" border="0">
+                        <tr>
+                            <td colspan="2"><input type="radio" name="gender" value="Mr." checked>Mr.
+                                <input type="radio" name="gender" value="Mrs.">Mrs.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lable"><label for="name">Name<span class="required" >*</span></label></td>
+                            <td class="input"><input type="text" name="name" id="txtName" size="30" class="frmContact" placeholder="Enter Your Name" onchange="validateName();" required><span id="nameTick" class="tick"></span><div id="divNameMessage" class="msgError"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="lable"><label for="tp">TP<span class="required">*</span></label></td>
+                            <td class="input"><input type="text" name="tp" size="20" class="frmContact" placeholder="Telephone number" required onchange="validateTP();" id="txtTp"><span id="tpTick" class="tick"></span><div id="divTpMessage" class="msgError"></div></td>
+                        </tr>
+                        <tr>
+                            <td class="lable"><label for="eMail">Email<span class="required">*</span></label></td>
+                            <td class="input"><input type="email" id="txtEmail" name="email" class="frmContact" placeholder="Your Email here" onchange="validateEmail();" required><span id="emailTick" class="tick"></span><div id="divEmailMessage" class="msgError"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address</label></td>
+                            <td><textarea name="address" id="txtAddress" rows="4" cols="33" class="frmContact" placeholder="Your Address"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="topic">Subject<span class="required">*</span></label></td>
+                            <td>
+                                <select name="topic" class="frmContact" required >
+                                    <option value="order_item">For purchase</option>
+                                    <option value="price_inquiry">To inquire about prices</option>
+                                    <option value="Wedding_order">To order wedding shoes</option>
+                                    <option value="Complaint">to Complaint</option>
+                                    <option value="Other">Other Reason</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label for="message">Your message<span class="required">*</span></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea name="your_Message" id="txtMessage" rows="5" cols="45" class="frmContact" placeholder="Your message" required></textarea></td>
+                        </tr>
+                    </table>
+                        <input type="submit" value="Submit" id="submit" class="button">
+                        <input type="reset" value="Reset" id="reset" class="button">   
+                </form>
+            </div>
+            <div id="divContactDetails">
+               
+            </div>
+        </div>
+    </body>
+</html>
